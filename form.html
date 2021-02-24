@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="myForm">
+        <h2>My Bio Data</h2>
+        <form>
+            <div class="form_Top">
+                <fieldset>
+                <legend>Personal Details</legend>
+                <label>FULL NAME</label>
+                <div class="form_TopName">
+                    <input placeholder="First name" type="text"  />
+                    <input placeholder="Middle name" type="text"  />
+                    <input placeholder="Last name" type="text"  />
+                </div>
+                <br />
+                <label>BIRTH DATE</label>
+                <div class="form_TopDob">
+                    <input type="date" id="dob" name="dob" >
+                </div>
+                <br/>
+
+                <label>Nationality : </label>
+                <label>Indian: 
+                    <input type="checkbox" value="checkbox1" name="checkgroup[]" /></label>
+                <label>Others: 
+                    <input type="checkbox" value="checkbox2" name="checkgroup[]" /></label>
+                <br>
+                <br/>
+                <label>Gender : </label>
+                <label>Male: 
+                    <input type="radio" value="radio1" name="radiogroup" /></label>
+                <label>Female: 
+                    <input type="radio" value="radio2" name="radiogroup" /></label>
+                <label>Others: 
+                    <input type="radio" value="radio2" name="radiogroup" /></label>
+                <br />
+
+                <br> 
+                <label>CURRENT ADDRESS</label>
+                <div class="form_TopAddress">
+                    <div class="form_TopAddressDuo">
+                    <input type="text"  placeholder="Street address 1" >
+                    <input type="text" placeholder="Street address 2" >
+                    </div>
+                    <div class="form_TopAddressDuo2">
+                    <input type="text" placeholder="City" >
+                    <input type="text" placeholder="State" >
+                </div>
+                </div>
+
+                <br />
+                <div class="form_EmailPhone">
+                <div class="form_TopEmail">
+                    <label>EMAIL</label>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="form_TopPhone">
+                    <label>PHONE NO.</label>
+                    <input type="text" placeholder="Phone No."  >
+                </div>
+            </fieldset>
+            </div>
+            <br />
+            <br />
+
+            <fieldset>
+            <legend>Academic Details</legend>
+            <label>Stream: </label>
+             <select name="select" size="1">
+            <option>Select Stream</option>
+             <option>Science</option>
+             <option>Commerce</option>
+             <option>Arts</option>
+             <option>Others</option>
+            </select>
+            <br/> 
+            <br/>
+
+            <div class="form_Middle">
+                <div class="form_MiddleInstitution">
+                <label>Name of Institutuion</label>
+                <input type="text" placeholder="Institution's Name" >
+                <input type="text" placeholder="Institution's Name" >
+                <input type="text" placeholder="Institution's Name" >
+            </div>
+
+            <div class="form_MiddleBoard">
+                <label>Institutuion's Board</label>
+                <input type="text" placeholder="Institution's Board Name" >
+                <input type="text" placeholder="Institution's Board Name" >
+                <input type="text" placeholder="Institution's Board Name" >
+            </div>
+
+            <div class="form_MiddleYear">
+                <label>Passing Year</label>
+                <input type="text" placeholder="Passing Year" >
+                <input type="text" placeholder="Passing Year" >
+                <input type="text" placeholder="Passing Year" >
+            </div>
+
+            <div class="form_MiddlePercent">
+                <label>Percentage</label>
+                <input type="text" placeholder="Percentage / CGPA" >
+                <input type="text" placeholder="Percentage / CGPA" >
+                <input type="text" placeholder="Percentage / CGPA" >
+            </div>
+
+            <div class="form_MiddleMarksheet form_file">
+                <label>Document</label>
+                <input type="file" placeholder="Percentage / CGPA" >
+                <input type="file" placeholder="Percentage / CGPA" >
+                <input type="file" placeholder="Percentage / CGPA" >
+            </div>
+        </fieldset>
+                <br />
+                <br />
+          
+
+                <fieldset>
+                <legend>Portfolio and Professional Handles</legend>
+                <div class="form_bottom">
+                    <div class="form_bottomDuo">
+                    <label>Portfolio</label>
+                        <input type="text" placeholder="Portfolio URL"></div>
+                        <div class="form_bottomDuo">
+                        <label>Github</label>
+                        <input type="text" placeholder="Github URL">
+                    </div>
+                        <div class="form_bottomDuo">
+                        <label>LinkedIn</label>
+                        <input type="text" placeholder="LinkedIn URL">
+                    </fieldset>
+                    </div>
+                </div>
+                <br />
+                    <button class="submitButton" type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
